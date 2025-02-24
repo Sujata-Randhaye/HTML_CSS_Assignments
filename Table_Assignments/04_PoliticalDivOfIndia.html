@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provinces of British India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(58, 58, 58);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: #f9f9f9;
+            margin: auto;
+        }
+        caption {
+            margin: 10px 0;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        th, td {
+            border: 1px solid #a8aaad;
+            padding: 10px;
+            background-color: #f3f4f6;
+        }
+        th {
+            text-align: center;
+            position: relative;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            padding: 10px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        img {
+            width: 100%;
+            max-width: 550px;
+            display: block;
+            margin: auto;
+        }
+        .element {
+            color: #3366CC;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Provinces of British India (1907)</caption>
+        <tr>
+            <th>Province</th>
+            <th>Area (km²)</th>
+            <th>Population in million (1901)</th>
+            <th>Chief Administration</th>
+            <th>Map</th>
+        </tr>
+        <tr>
+            <th colspan="4">Major Provinces</th>
+            <td rowspan="12"><img src="images/Img_Map.png" alt="map"></td>
+        </tr>
+        <tr>
+            <td class="dropdown">Assam Province
+                <div class="dropdown-content">Details about Assam Province</div>
+            </td>
+            <td>130000</td>
+            <td>6</td>
+            <td>Chief Commissioner</td>
+        </tr>
+        <tr>
+            <td class="dropdown">Bengal Presidency
+                <div class="dropdown-content">Details about Bengal Presidency</div>
+            </td>
+            <td>390000</td>
+            <td>75</td>
+            <td>Lieutenant-Governor</td>
+        </tr>
+        <tr>
+            <td class="dropdown">Bombay Presidency
+                <div class="dropdown-content">Details about Bombay Presidency</div>
+            </td>
+            <td>320000</td>
+            <td>19</td>
+            <td>Governor-in-Council</td>
+        </tr>
+        <tr>
+            <td class="dropdown">Central Provinces and Berar
+                <div class="dropdown-content">Details about Central Provinces and Berar</div>
+            </td>
+            <td>270000</td>
+            <td>13</td>
+            <td>Chief Commissioner</td>
+        </tr>
+        <tr>
+            <td class="dropdown">Madras Presidency
+                <div class="dropdown-content">Details about Madras Presidency</div>
+            </td>
+            <td>370000</td>
+            <td>38</td>
+            <td>Governor-in-Council</td>
+        </tr>
+        <tr>
+            <td class="dropdown">Punjab
+                <div class="dropdown-content">Details about Punjab</div>
+            </td>
+            <td>250000</td>
+            <td>20</td>
+            <td>Lieutenant-Governor</td>
+        </tr>
+        <tr>
+            <td class="dropdown">United Provinces
+                <div class="dropdown-content">Details about United Provinces</div>
+            </td>
+            <td>280000</td>
+            <td>48</td>
+            <td>Lieutenant-Governor</td>
+        </tr>
+        <tr>
+            <th colspan="4">Minor Provinces</th>
+        </tr>
+        <tr>
+            <td class="dropdown">Ajmer-Merwara
+                <div class="dropdown-content">Details about Ajmer-Merwara</div>
+            </td>
+            <td>7000</td>
+            <td>477</td>
+            <td><i>ex offcio</i> Chief Commissioner</td>
+        </tr>
+        <tr>
+            <td class="dropdown">Andaman and Nicobar Islands
+                <div class="dropdown-content">Details about Andaman and Nicobar Islands</div>
+            </td>
+            <td>78000</td>
+            <td>25</td>
+            <td>Chief Commissioner</td>
+        </tr>
+        <tr>
+            <td class="dropdown">Coorg Province
+                <div class="dropdown-content">Details about Coorg Province</div>
+            </td>
+            <td>4100</td>
+            <td>181</td>
+            <td><i>ex offcio</i> Chief Commissioner</td>
+        </tr>
+    </table>
+</body>
+</html>

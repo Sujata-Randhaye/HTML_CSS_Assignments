@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightblue;
+        }
+        .activity {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Weekly Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>9:00 - 9:30</td>
+            <td class="activity">Team Meeting</td>
+            <td></td>
+            <td class="activity">Project Work</td>
+            <td class="activity" rowspan="4">Consultation</td>
+            <td class="activity">Team Meeting</td>
+        </tr>
+        <tr>
+            <td>9:30 - 10:00</td>
+            <td></td>
+            <td class="activity">Training</td>
+            <td></td>
+            <td class="activity">Training</td>
+        </tr>
+        <tr>
+            <td>10:00 - 10:30</td>
+            <td class="activity">Workshop</td>
+            <td></td>
+            <td class="activity">Workshop</td>
+            <td class="activity">Workshop</td>
+        </tr>
+        <tr>
+            <td>10:30 - 11:00</td>
+            <td></td>
+            <td></td>
+            <td class="activity">Team Discussion</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11:00 - 11:30</td>
+            <td class="activity">Client Meeting</td>
+            <td class="activity">Client Meeting</td>
+            <td class="activity">Client Meeting</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>
