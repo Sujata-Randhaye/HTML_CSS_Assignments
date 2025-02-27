@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Discount</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9966, #ff5e62);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .coupon {
+            width: 450px;
+            border: 4px dashed #fff;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .top-section {
+            background: #333;
+            color: white;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .coupon img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+        .coupon h3 {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 20px;
+        }
+        .coupon p {
+            font-size: 14px;
+            color: #555;
+            padding: 0 20px;
+            line-height: 1.5;
+        }
+        .bottom-section {
+            background: #f8f8f8;
+            padding: 20px;
+        }
+        .promo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff5e62;
+        }
+        .copy-btn {
+            background: #ff5e62;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .copy-btn:hover {
+            background: #e14e4e;
+        }
+        .expires {
+            color: #ff5e62;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="coupon">
+        <div class="top-section">Exclusive Offer</div>
+        <img src="image/burger.jpg" alt="Delicious Food">
+        <h3>Get 20% OFF Today!</h3>
+        <p>
+            Enjoy delicious meals at an unbeatable price! Use the promo code below to grab your discount before it expires.
+        </p>
+        <div class="bottom-section">
+            <p class="promo">Promo Code: <span id="promo-code">BOH232</span></p>
+            <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+            <p class="expires">Offer expires: Dec 31, 2025</p>
+        </div>
+    </div>
+    <script>
+        function copyCode() {
+            const promoText = document.getElementById('promo-code').innerText;
+            navigator.clipboard.writeText(promoText);
+            alert('Promo Code Copied: ' + promoText);
+        }
+    </script>
+</body>
+</html>
