@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #header, #footer {
+            background-color: #66b3ff;
+            padding: 20px;
+            margin: 10px;
+            font-weight: bold;
+            text-align: start;
+        }
+
+        #container {
+            background-color: #d9d9d9;
+            padding: 20px;
+            margin: 10px;
+            text-align: start;
+            overflow: hidden; /* Clears floated elements */
+        }
+
+        #div-1, #div-4 {
+            width: 100%;
+            padding: 20px;
+            
+            box-sizing: border-box;
+        }
+
+        #div-2, #div-3 {
+            width: 50%; /* Adjust width for side-by-side layout */
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #div-2 {
+            background-color: #99ff99;
+           
+        }
+
+        #div-3 {
+            background-color: #ff9999;
+        }
+
+        #div-1 {
+            background-color: #ff9966;
+        }
+
+        #div-4 {
+            background-color: #ffffcc;
+            clear: both; /* Ensures div-4 appears below floated elements */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">id="header"</div>
+
+    <div id="container">
+        id="container"
+        <div id="div-1">id="div-1"<br>This is a sample paragraph.</div>
+        <div id="div-2">id="div-2"<br>This is a sample paragraph.</div>
+        <div id="div-3">id="div-3"<br>This is a sample paragraph.</div>
+        <div id="div-4">id="div-4"<br>This is a sample paragraph.</div>
+    </div>
+
+    <div id="footer">id="footer"</div>
+
+</body>
+</html>

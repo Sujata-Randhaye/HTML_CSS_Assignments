@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#header, #footer {
+    background-color: #66b3ff;
+    padding: 20px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: start;
+}
+
+#container {
+    background-color: #d9d9d9;
+    padding: 20px;
+    margin: 10px;
+    text-align: start;
+}
+
+#div-1, #div-2, #div-3, #div-4 {
+    width: 100%; /* Full width */
+    padding: 20px;
+    margin-bottom: 10px; /* Space between divs */
+    box-sizing: border-box;
+}
+
+#div-1 {
+    background-color: #ff9966;
+}
+
+#div-2 {
+    background-color: #99ff99;
+}
+
+#div-3 {
+    background-color: #ff9999;
+}
+
+#div-4 {
+    background-color: #ffffcc;
+}
